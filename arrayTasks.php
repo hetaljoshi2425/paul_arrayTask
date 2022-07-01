@@ -24,6 +24,4 @@ $finalResult = [];
 $finalResult['input'] = $numbers;
 $finalResult['filteredValues'] = $getResult;
 echo json_encode($finalResult);
-echo "<pre>";
-print_r($finalResult);
 ?>
