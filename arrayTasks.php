@@ -3,6 +3,7 @@
 function getMaxMinOddnumbers($numberarray = []) {
     $maxNum = max($numberarray); // get maximum number
     $minNum = min($numberarray); // get minimum number
+    $addition = array_sum($numberarray); // get addition of the all integer values
     $even   = array();
     // get odd numbers
     foreach($numberarray as $val) {
@@ -14,6 +15,7 @@ function getMaxMinOddnumbers($numberarray = []) {
     $result = [];
     $result['maximum'] = $maxNum;
     $result['minimum'] = $minNum;
+    $result['addition'] = $addition;
     $result['odds'] = $odds;
     return $result;
 }
